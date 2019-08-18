@@ -1,0 +1,96 @@
+.color-main {
+  color: $main_color;
+}
+
+.rotate__180 {
+  transform: rotateZ(180deg) rotateY(180deg);
+}
+
+.steenify_title {
+  font-family: $title, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: em(60px);
+  line-height: em(82px, 60px);
+  color: $title_color;
+  margin-bottom: 0;
+  font-weight: 900;
+}
+
+.steenify__trainsition {
+  transition: all 0.3s ease-in-out;
+}
+
+.steenify_btn {
+  display: inline-block;
+  font-size: em(18px);
+  height: em(46px, 18px);
+  line-height: em(46px, 18px);
+  border-radius: em(23px, 18px);
+  padding: 0 em(35px, 18px);
+
+  &--white {
+    color: $main_color;
+    background-color: $white;
+  }
+
+  &--red {
+    background-color: $main_color;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $main_color;
+    }
+  }
+
+  &--border {
+    border: 1px solid $main_color;
+    line-height: em(44px, 18px);
+    color: $main_color;
+    background-color: $white;
+
+    &:hover {
+      background-color: $main_color;
+      color: $white;
+    }
+  }
+}
+
+.transition-fade-up {
+  opacity: 1;
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+  transform: translateZ(0);
+}
+
+html.is-animating .transition-fade-up {
+  opacity: 0;
+  transform: translate3d(-100px, 100px, 0);
+}
+
+.slick-slide {
+  &:focus {
+    outline: none;
+  }
+}
+
+.slick-dots {
+  margin: 0;
+
+  button {
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #b8bbc3;
+    margin: 0 8px;
+  }
+
+  .slick-active {
+    button {
+      width: 10px;
+      height: 10px;
+      background-color: #003399;
+    }
+  }
+}

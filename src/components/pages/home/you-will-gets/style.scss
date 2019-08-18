@@ -1,0 +1,11 @@
+@import 'styles/vars.scss';
+
+.gets {
+    background-color: $title_color;
+    text-align: center;
+    padding: em(38px) 0 em(57px) 0;
+
+    .steenify_title {
+        color: $white;
+    }
+}

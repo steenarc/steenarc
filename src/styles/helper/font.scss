@@ -1,0 +1,23 @@
+@font-face {
+  font-family: $font;
+  src: url('src/assets/Avenir-Roman.eot');
+  src: url('src/assets/Avenir-Roman.eot?#iefix') format('embedded-opentype'), url('src/assets/Avenir-Roman.woff') format('woff'), url('src/assets/Avenir-Roman.ttf') format('truetype'), url('src/assets/Avenir-Roman.svg#ywftsvg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font;
+  src: url('src/assets/Avenir-Medium.eot');
+  src: url('src/assets/Avenir-Medium.eot?#iefix') format('embedded-opentype'), url('src/assets/Avenir-Medium.woff') format('woff'), url('src/assets/Avenir-Medium.ttf') format('truetype'), url('src/assets/Avenir-Medium.svg#ywftsvg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font;
+  src: url('src/assets/Avenir-Black.eot');
+  src: url('src/assets/Avenir-Black.eot?#iefix') format('embedded-opentype'), url('src/assets/Avenir-Black.woff') format('woff'), url('src/assets/Avenir-Black.ttf') format('truetype'), url('src/assets/Avenir-Black.svg#ywftsvg') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}

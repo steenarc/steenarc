@@ -1,0 +1,45 @@
+@import 'styles/vars.scss';
+
+.how-we-works {
+    padding: em(80px) 0;
+
+    &__sub-title {
+        font-weight: 500;
+        font-size: em(40px);
+        line-height: em(55px, 40px);
+        text-align: center;
+    }
+
+    .item {
+        display: flex;
+        align-items: flex-start;
+        padding-top: em(71px);
+
+        &__step {
+            font-size: em(80px);
+            line-height: em(80px, 80px);
+            color: $main_color;
+            width: 60px;
+        }
+
+        &__caption {
+            flex: 1;
+        }
+
+        &__title {
+            font-weight: 500;
+            font-size: em(20px);
+            line-height: em(27px, 20px);
+            margin-bottom: em(19px, 20px);
+        }
+
+        &__desc {
+            font-size: em(18px);
+            line-height: em(25px, 18px);
+
+            p {
+                margin-bottom: em(12px, 18px);
+            }
+        }
+    }
+}

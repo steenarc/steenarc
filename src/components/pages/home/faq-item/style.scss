@@ -1,0 +1,21 @@
+@import 'styles/vars.scss';
+
+$faqs_color: #838999;
+
+.item-faq {
+    font-size: 14px;
+
+    &__title {
+        font-size: em(20px);
+        line-height: em(27px, 20px);
+        font-weight: 500;
+        border: none;
+        background-color: $nocolor;
+    }
+
+    &__content {
+        font-size: em(18px);
+        line-height: em(28px, 18px);
+        color: $faqs_color;
+    }
+}

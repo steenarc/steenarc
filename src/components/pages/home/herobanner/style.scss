@@ -1,0 +1,58 @@
+@import 'styles/vars.scss';
+
+.hero-banner {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $main_color;
+    font-weight: 900;
+    color: $white;
+
+    &__title {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: em(30px)
+    }
+
+    &__char {
+        font-size: em(80px);
+        line-height: em(80px, 100px);
+        padding: 0 em(19px, 100px);
+    }
+
+    &__manage {
+        margin-bottom: em(-22px);
+    }
+
+    &__sub-title {
+        margin-bottom: 0;
+        font-size: em(100px);
+        line-height: em(100px, 100px);
+    }
+
+    &__more {
+        display: flex;
+        margin-top: em(145px);
+        position: relative;
+    }
+
+    &__view-demo {
+        margin-right: em(100px, 18px);
+    }
+
+    &__desc {
+        font-size: em(19px);
+        line-height: em(26px, 19px);
+        margin-bottom: 0;
+        font-weight: normal;
+    }
+
+    &__scroll {
+        border: none;
+        background-color: $nocolor;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -14px;
+    }
+}
