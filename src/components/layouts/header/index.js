@@ -90,12 +90,12 @@ class Header extends PureComponent {
             </a>
 
             <div
-              class={`hamburger hamburger--slider d-block d-lg-none ${isOpenMenu &&
+              className={`hamburger hamburger--slider d-block d-lg-none ${isOpenMenu &&
                 "is-active"}`}
               onClick={this.handleToggleMenu}
             >
-              <div class="hamburger-box">
-                <div class="hamburger-inner"></div>
+              <div className="hamburger-box">
+                <div className="hamburger-inner"></div>
               </div>
             </div>
           </nav>
