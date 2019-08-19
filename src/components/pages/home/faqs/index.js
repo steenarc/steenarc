@@ -16,8 +16,15 @@ export default class FAQs extends Component {
               send us.
             </p>
           </FaQItem>
-          <FaQItem title="2. Can I can the template?"></FaQItem>
-          <FaQItem title="3. How much will it cost to change template?"></FaQItem>
+          <FaQItem title="2. Can I change template?">
+            <p>
+              Yes, there will be more template with more functionalities in the
+              future. For now, there is just one template.
+            </p>
+          </FaQItem>
+          <FaQItem title="3. How much will it cost to change template?">
+            <p>It is free</p>
+          </FaQItem>
         </div>
       </section>
     );

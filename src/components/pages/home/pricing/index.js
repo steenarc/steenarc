@@ -57,7 +57,8 @@ export default class Pricing extends Component {
                 <a
                   className="steenify_btn steenify_btn--border info__btn"
                   title="Start Now"
-                  href="#"
+                  href="https://forms.gle/vMx1tZzVAnMwVRY4A"
+                  target="_blank"
                 >
                   Start Now
                 </a>
@@ -69,7 +70,8 @@ export default class Pricing extends Component {
                 <a
                   className="steenify_btn steenify_btn--border upgrade__btn"
                   title="Let us know"
-                  href="#"
+                  href="https://forms.gle/vMx1tZzVAnMwVRY4A"
+                  target="_blank"
                 >
                   Let us know
                 </a>

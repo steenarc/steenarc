@@ -85,7 +85,12 @@ class Header extends PureComponent {
               </ul>
             </div>
 
-            <a className="header__contact" href="#" title="Contact us">
+            <a
+              className="header__contact"
+              href="https://forms.gle/vMx1tZzVAnMwVRY4A"
+              title="Contact us"
+              target="_blank"
+            >
               Contact us
             </a>
 

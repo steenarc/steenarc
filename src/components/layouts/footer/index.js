@@ -20,7 +20,11 @@ const Footer = () => (
         <div className="col-lg-4 d-flex justify-content-center contact">
           <div className="footer__inner">
             <h4 className="footer__title">Contact</h4>
-            <p className="footer__desc">steenarc@steenify.com</p>
+            <p className="footer__desc">
+              <a className="footer__mail" href="mailto:steenarc@steenify.com">
+                steenarc@steenify.com
+              </a>
+            </p>
           </div>
         </div>
         <div className="col-lg-4">

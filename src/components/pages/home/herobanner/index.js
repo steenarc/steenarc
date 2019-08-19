@@ -21,8 +21,9 @@ export default class HeroBanner extends Component {
           <div className="hero-banner__more">
             <a
               className="hero-banner__view-demo steenify_btn steenify_btn--white"
-              href="#"
+              href="http://ad9.vn/"
               title="VIEW DEMO"
+              target="_blank"
             >
               VIEW DEMO
             </a>

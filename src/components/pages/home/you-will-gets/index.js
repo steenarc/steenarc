@@ -16,9 +16,10 @@ export default class YouWillGets extends Component {
               <img src="img/ad9.jpg" alt="ad9" />
               <p className="text-center mb-0">
                 <a
-                  href="#"
+                  href="http://ad9.vn/"
                   title="VIEW DEMO"
                   className="steenify_btn steenify_btn--red item__view"
+                  target="_blank"
                 >
                   VIEW DEMO
                 </a>
