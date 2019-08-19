@@ -71,7 +71,10 @@ export default class HowWeWorks extends Component {
                 <div className="item__caption">
                   <p className="item__title">Get Your Website</p>
                   <div className="item__desc">
-                    <p>We will select the best content for your website</p>
+                    <p>
+                      After deliver the website, if you need update or add
+                      something, let us know. We will handle it for you.
+                    </p>
                   </div>
                 </div>
               </div>

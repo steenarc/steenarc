@@ -22,11 +22,11 @@ export default class Pricing extends Component {
               <ul className="info__list">
                 <li>
                   <IconTick className="info__icon" />
-                  UNLIMITED Bandwidth
+                  <b>UNLIMITED</b> Bandwidth
                 </li>
                 <li>
                   <IconTick className="info__icon" />
-                  20GB Storage
+                  <b>20GB Storage</b>
                 </li>
                 <li>
                   <IconTick className="info__icon" />
