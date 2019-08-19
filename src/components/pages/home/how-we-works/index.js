@@ -1,15 +1,37 @@
 import React, { Component } from "react";
 
+import Step1 from "src/assets/images/step-1.svg";
+import Step2 from "src/assets/images/step-2.svg";
+import Step3 from "src/assets/images/step-3.svg";
+import Ruler from "src/assets/images/ruler.svg";
+import Man from "src/assets/images/man.svg";
+
 import "./style.scss";
 
 export default class HowWeWorks extends Component {
   render() {
     return (
-      <section className="how-we-works">
+      <section className="how-we-works" id="howweworks">
         <div className="container">
           <p className="how-we-works__sub-title">
             It's easy to spend less to expand your business
           </p>
+          <div className="steps">
+            <div className="step step--first">
+              <Ruler />
+              <Man className="man" />
+            </div>
+            <div className="step">
+              <Step1 className="step__icon" />
+            </div>
+            <div className="step">
+              <Step2 className="step__icon" />
+            </div>
+            <div className="step">
+              <Step3 className="step__icon" />
+            </div>
+          </div>
+
           <h3 className="steenify_title text-center">How we works</h3>
           <div className="row">
             <div className="col-lg-4">

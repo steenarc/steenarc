@@ -1,0 +1,9 @@
+@import 'styles/vars.scss';
+
+.faqs {
+    padding-bottom: em(80px);
+
+    &__title {
+        margin-bottom: em(52px, 60px);
+    }
+}

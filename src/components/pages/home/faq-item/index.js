@@ -17,17 +17,16 @@ class FaQItem extends Component {
     const { title, children } = this.props;
     const { collapse } = this.state;
     return (
-      <div className="item-faq">
+      <div className={`item-faq ${collapse && "opened"}`}>
         <div className="item-faq__header">
           <button
             onClick={this.toggle}
-            className={`item-faq__title collapsed ${collapse &&
-              "collapsed__open"}`}
+            className="item-faq__title"
             type="button"
           >
             <span>{title}</span>
             <svg
-              className="home_faq__icon"
+              className="item-faq__icon"
               aria-hidden="true"
               height={20}
               width={20}

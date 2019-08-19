@@ -38,19 +38,19 @@ class Header extends PureComponent {
                 </a>
               </li>
               <li className="menu__item">
-                <a className="menu__link" href="#" title="How it works">
+                <Link to="/#howweworks" className="menu__link">
                   How it works
-                </a>
+                </Link>
               </li>
               <li className="menu__item">
-                <a className="menu__link" href="#" title="Pricing">
+                <Link to="/#pricing" className="menu__link">
                   Pricing
-                </a>
+                </Link>
               </li>
               <li className="menu__item">
-                <a className="menu__link" href="#" title="FAQs">
+                <Link to="/#faqs" className="menu__link">
                   FAQs
-                </a>
+                </Link>
               </li>
             </ul>
 

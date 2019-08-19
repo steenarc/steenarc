@@ -7,14 +7,17 @@ import "./style.scss";
 export default class FAQs extends Component {
   render() {
     return (
-      <section className="faqs">
+      <section className="faqs" id="faqs">
         <div className="container">
+          <h3 className="steenify_title text-center faqs__title">FAQs</h3>
           <FaQItem title="1. How long will you deliver the website?">
             <p>
               It will take from 3 - 7 days depends on the mount of content you
               send us.
             </p>
           </FaQItem>
+          <FaQItem title="2. Can I can the template?"></FaQItem>
+          <FaQItem title="3. How much will it cost to change template?"></FaQItem>
         </div>
       </section>
     );

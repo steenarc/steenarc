@@ -1,4 +1,4 @@
 module.exports = [{
-      plugin: require('/Users/macbook/Documents/project/steenify/steenarc.github.io/gatsby-browser.js'),
+      plugin: require('/Users/anhnguyen/Documents/Projects/Steenify/github/steenarc/gatsby-browser.js'),
       options: {"plugins":[]},
     }]

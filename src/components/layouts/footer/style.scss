@@ -1,43 +1,75 @@
 @import 'styles/vars.scss';
-$footer_color_text: #b8bbc3;
 
 .footer {
-  &__steenify {
-    font-size: $font_size;
-    background: $white;
+  background-color: $title-color;
+  color: $white;
+  padding: em(50px) 0 0 0;
 
-    .container {
-      max-width: 1110px;
-    }
+  &__title,
+  &__desc,
+  &__copy {
+    margin-bottom: 0;
   }
 
-  &__content {
-    padding-top: 26px;
-    padding-bottom: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  &__title {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: em(10px, 20px);
+    opacity: 1;
+    font-weight: 600;
   }
 
-  &__menu {
-    display: block;
-    text-align: right;
-    margin: 0;
+  &__desc {
+    font-size: 18px;
+    line-height: 25px;
+    opacity: .7;
+    margin-bottom: em(33px, 18px);
   }
 
-  &__item {
-    display: inline-block;
-    margin-left: 26px;
+  &__copy {
+    border-top: 1px solid #3D3636;
+    font-size: 13px;
+    line-height: 18px;
+    opacity: .7;
+    padding: 17px 0 19px 0;
   }
 
-  @include max-sm() {
-    &__content {
-      justify-content: center;
-    }
+  .form-group {
+    width: percentage(1);
+    max-width: 370px;
+    position: relative;
+    padding-top: 5px;
+    margin-bottom: 0;
+  }
 
-    &__menu {
-      display: none;
+  .form-control {
+    width: percentage(1);
+    height: em(50px, 18px);
+    border: none;
+    box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background: #F6F6F6;
+    padding: 0 em(151px, 18px) 0 em(18px, 18px);
+    font-size: em(18px);
+    line-height: em(25px, 18px);
+  }
+
+  .form-btn {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 18px;
+    line-height: 25px;
+    height: em(50px, 18px);
+    border: none;
+    background-color: $main_color;
+    color: $white;
+    text-align: center;
+    width: em(109px, 18px);
+    border-radius: 0px 4px 4px 0px;
+
+    &:hover {
+      opacity: .8;
     }
   }
 }

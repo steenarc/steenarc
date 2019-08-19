@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import TextGets from "src/assets/images/gets.svg";
-
 import "./style.scss";
 
 export default class YouWillGets extends Component {

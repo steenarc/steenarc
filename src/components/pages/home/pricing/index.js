@@ -7,7 +7,7 @@ import "./style.scss";
 export default class Pricing extends Component {
   render() {
     return (
-      <section className="pricing">
+      <section className="pricing" id="pricing">
         <div className="container">
           <h3 className="steenify_title text-center pricing__title">Pricing</h3>
           <div className="pricing__inner">

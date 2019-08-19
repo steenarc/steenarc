@@ -12,7 +12,7 @@ import "./style.scss";
 
 const Home = () => (
   <Layout>
-    <SEO title="Chup hinh the" />
+    <SEO title="Steenify" />
     <main className="home__page steenify__page">
       <HeroBanner />
       <HowWeWorks />

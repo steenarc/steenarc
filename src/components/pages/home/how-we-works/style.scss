@@ -8,6 +8,7 @@
         font-size: em(40px);
         line-height: em(55px, 40px);
         text-align: center;
+        margin-bottom: em(118px, 40px);
     }
 
     .item {
@@ -39,6 +40,32 @@
 
             p {
                 margin-bottom: em(12px, 18px);
+            }
+        }
+    }
+
+    .steps {
+        max-width: 1115;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 10px solid #EBEBEB;
+        margin-bottom: em(80px);
+
+        .step {
+            &--first {
+                position: relative;
+
+                .man {
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    bottom: -6px;
+                }
+            }
+
+            &__icon {
+                margin-top: em(10px);
             }
         }
     }

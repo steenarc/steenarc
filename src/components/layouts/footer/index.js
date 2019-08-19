@@ -1,43 +1,39 @@
-import React from 'react';
-import './style.scss';
+import React from "react";
+import "./style.scss";
 
 const Footer = () => (
-  <footer id="main__footer" className="footer footer__steenify transition-fade">
+  <footer id="main__footer" className="footer footer--steenify transition-fade">
     <div className="container">
-      <div className="footer__content">
-        <div className="footer__copyright">
-          Copyright ©
-          {' '}
-          {new Date().getFullYear()}
-          {' '}
-          <a target="_blank" rel="noopener noreferrer" title="steenify" href="https://steenify.com">
-            Steenify
-          </a>
+      <div className="row">
+        <div className="col-lg-4">
+          <h4 className="footer__title">Subscribe to our Newsletter</h4>
+          <div className="form-group">
+            <input
+              className="form-control"
+              placeholder="Enter your email address"
+            />
+            <button type="button" className="form-btn">
+              Subscribe
+            </button>
+          </div>
         </div>
-
-        <ul className="footer__menu">
-          <li className="footer__item">
-            <a className="footer__link" href="/" title="Home">
-              Home
-            </a>
-          </li>
-          <li className="footer__item">
-            <a className="footer__link" href="#pricing" title="The Pricing">
-              Pricing
-            </a>
-          </li>
-          <li className="footer__item">
-            <a className="footer__link" href="#contact" title="Contact">
-              Contact
-            </a>
-          </li>
-          <li className="footer__item">
-            <a className="footer__link" href="#signup" title="Sign Up">
-              Sign Up
-            </a>
-          </li>
-        </ul>
+        <div className="col-lg-4 d-flex justify-content-center">
+          <div className="footer__inner">
+            <h4 className="footer__title">Contact</h4>
+            <p className="footer__desc">steenarc@steenify.com</p>
+          </div>
+        </div>
+        <div className="col-lg-4">
+          <h4 className="footer__title">Address</h4>
+          <p className="footer__desc">
+            289 Dinh Bo Linh, Ward 26, Binh Thanh District, Ho Chi Minh City,
+            Viet Nam
+          </p>
+        </div>
       </div>
+      <p className="footer__copy text-center">
+        A product of Steenify © 2019 All rights reserved.
+      </p>
     </div>
   </footer>
 );

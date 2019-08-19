@@ -4,18 +4,59 @@ $faqs_color: #838999;
 
 .item-faq {
     font-size: 14px;
+    border-bottom: 1px solid $nocolor;
+    background-color: $second_color;
+    border-radius: 10px;
+    border: 1px solid $nocolor;
+    transition: all .3s ease;
+    padding: 0 em(20px);
+    margin-top: em(16px, 14px);
+    max-width: 1095px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &.opened {
+        background-color: $nocolor;
+        border-color: #E8E8E8;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+
+        .item-faq {
+            &__title {
+                border-color: #DEE2EA !important;
+            }
+
+            &__icon {
+                transform: rotate(45deg);
+            }
+        }
+    }
 
     &__title {
+        width: percentage(1);
         font-size: em(20px);
         line-height: em(27px, 20px);
         font-weight: 500;
         border: none;
         background-color: $nocolor;
+        text-align: left;
+        padding: em(17px, 20px) 0;
+        border-bottom: 1px solid $nocolor;
+        border-color: $nocolor !important;
+        position: relative;
+    }
+
+    &__icon {
+        position: absolute;
+        top: em(21px, 20px);
+        right: em(24px, 20px);
+        color: $main_color;
+        transition: all .3s ease;
     }
 
     &__content {
         font-size: em(18px);
         line-height: em(28px, 18px);
         color: $faqs_color;
+        padding: em(28px, 18px) 0;
     }
 }
