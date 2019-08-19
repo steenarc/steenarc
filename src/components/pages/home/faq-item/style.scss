@@ -39,7 +39,7 @@ $faqs_color: #838999;
         border: none;
         background-color: $nocolor;
         text-align: left;
-        padding: em(17px, 20px) 0;
+        padding: em(17px, 20px) em(20px, 20px) em(17px, 20px) 0;
         border-bottom: 1px solid $nocolor;
         border-color: $nocolor !important;
         position: relative;
@@ -58,5 +58,20 @@ $faqs_color: #838999;
         line-height: em(28px, 18px);
         color: $faqs_color;
         padding: em(28px, 18px) 0;
+    }
+
+    @include max-md() {
+        &__title {
+            padding: 9px 20px 9px 0;
+        }
+
+        &__icon {
+            top: 12px;
+            right: 5px;
+        }
+
+        &__content {
+            padding: 19px 0 2px 0;
+        }
     }
 }

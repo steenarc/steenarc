@@ -5,7 +5,7 @@ const Footer = () => (
   <footer id="main__footer" className="footer footer--steenify transition-fade">
     <div className="container">
       <div className="row">
-        <div className="col-lg-4">
+        <div className="col-lg-4 newsletter">
           <h4 className="footer__title">Subscribe to our Newsletter</h4>
           <div className="form-group">
             <input
@@ -17,7 +17,7 @@ const Footer = () => (
             </button>
           </div>
         </div>
-        <div className="col-lg-4 d-flex justify-content-center">
+        <div className="col-lg-4 d-flex justify-content-center contact">
           <div className="footer__inner">
             <h4 className="footer__title">Contact</h4>
             <p className="footer__desc">steenarc@steenify.com</p>

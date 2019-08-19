@@ -9,12 +9,12 @@ import "./style.scss";
 export default class HeroBanner extends Component {
   render() {
     return (
-      <section className="hero-banner">
+      <section className="hero-banner" id="home">
         <div className="container">
           <p className="hero-banner__title">
-            <TextBuild className="hero-banner__svg" />
+            <TextBuild className="hero-banner__svg hero-banner__svg--build" />
             <span className="hero-banner__char">&amp;</span>
-            <TextManage className="hero-banner__manage" />
+            <TextManage className="hero-banner__manage hero-banner__svg--manage" />
           </p>
           <p className="hero-banner__sub-title">website for architect</p>
 

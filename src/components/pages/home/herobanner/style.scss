@@ -11,7 +11,8 @@
     &__title {
         display: flex;
         align-items: flex-end;
-        margin-bottom: em(30px)
+        margin-bottom: em(30px);
+        flex-wrap: wrap;
     }
 
     &__char {
@@ -45,6 +46,7 @@
         line-height: em(26px, 19px);
         margin-bottom: 0;
         font-weight: normal;
+        padding-right: em(26px, 19px);
     }
 
     &__scroll {
@@ -54,5 +56,101 @@
         right: 0;
         top: 50%;
         margin-top: -14px;
+
+        svg {
+            position: relative;
+            -webkit-animation: mymove 1s infinite;
+            animation: mymove 1s infinite;
+            top: -10px;
+        }
+    }
+
+    @include max-md() {
+        padding-top: em(90px);
+
+        &__title {
+            margin-bottom: em(25px);
+        }
+
+        &__svg {
+            &--build {
+                width: 178px;
+            }
+
+            &--manage {
+                width: 294px;
+            }
+        }
+
+        &__char {
+            font-size: 60px;
+        }
+
+        &__sub-title {
+            font-size: em(56px);
+            line-height: em(56px, 56px);
+        }
+
+        &__more {
+            margin-top: em(30px);
+            padding-bottom: em(147px);
+            flex-wrap: wrap;
+        }
+
+        &__desc {
+            font-size: em(17px);
+            line-height: em(26px, 17px);
+            order: -1;
+            width: percentage(1);
+        }
+
+        &__view-demo {
+            font-size: em(14px);
+            line-height: em(20px, 14px);
+            height: em(36px, 14px);
+            line-height: em(36px, 14px);
+            margin-right: 0;
+            margin-top: em(30px, 14px);
+        }
+
+        &__scroll {
+            width: 14px;
+            top: auto;
+            bottom: 27px;
+            left: 50%;
+            margin-left: -8px;
+
+            svg {
+                width: percentage(1);
+            }
+        }
+    }
+}
+
+@-webkit-keyframes mymove {
+    0 {
+        top: -10px;
+    }
+
+    50% {
+        top: -5px;
+    }
+
+    100% {
+        top: -10px;
+    }
+}
+
+@keyframes mymove {
+    0 {
+        top: -10px;
+    }
+
+    50% {
+        top: -5px;
+    }
+
+    100% {
+        top: -10px;
     }
 }

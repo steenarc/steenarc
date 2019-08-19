@@ -6,4 +6,13 @@
     &__title {
         margin-bottom: em(52px, 60px);
     }
+
+    @include max-md() {
+        padding-top: em(11px);
+        padding-bottom: em(60px);
+
+        &__title {
+            margin-bottom: em(20px, 40px);
+        }
+    }
 }

@@ -13,6 +13,11 @@
   color: $title_color;
   margin-bottom: 0;
   font-weight: 900;
+
+  @include max-md() {
+    font-size: em(40px);
+    line-height: em(55px, 40px);
+  }
 }
 
 .steenify__trainsition {

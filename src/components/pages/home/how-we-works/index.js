@@ -21,14 +21,19 @@ export default class HowWeWorks extends Component {
               <Ruler />
               <Man className="man" />
             </div>
-            <div className="step">
-              <Step1 className="step__icon" />
-            </div>
-            <div className="step">
-              <Step2 className="step__icon" />
-            </div>
-            <div className="step">
-              <Step3 className="step__icon" />
+            <div className="steps__main">
+              <div className="step">
+                <Step1 className="step__icon" />
+                <span className="step__txt">Send.</span>
+              </div>
+              <div className="step">
+                <Step2 className="step__icon" />
+                <span className="step__txt">Do.</span>
+              </div>
+              <div className="step">
+                <Step3 className="step__icon" />
+                <span className="step__txt">Get.</span>
+              </div>
             </div>
           </div>
 

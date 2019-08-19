@@ -10,6 +10,7 @@ class FaQItem extends Component {
   }
 
   toggle = () => {
+    console.log(111);
     this.setState(state => ({ collapse: !state.collapse }));
   };
 

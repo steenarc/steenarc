@@ -5,7 +5,37 @@
     text-align: center;
     padding: em(38px) 0 em(57px) 0;
 
-    .steenify_title {
+    &__title {
         color: $white;
+        margin-bottom: em(21px, 60px);
+    }
+
+    .demos {
+        .item {
+            &__view {
+                margin-top: em(20px, 18px);
+            }
+        }
+    }
+
+    @include max-md() {
+        padding: em(38px) 0 em(40px) 0;
+
+        &__title {
+            font-size: em(38px);
+            margin-bottom: em(25px, 38px);
+
+            svg {
+                width: 77px;
+            }
+        }
+
+        .demos {
+            .item {
+                &__view {
+                    margin-top: em(31px, 18px);
+                }
+            }
+        }
     }
 }

@@ -72,4 +72,36 @@
       opacity: .8;
     }
   }
+
+  @include max-lg() {
+    padding: em(42px) 0 0 0;
+
+    &__title {
+      font-size: em(18px);
+      line-height: em(25px, 18px);
+    }
+
+    &__copy {
+      padding: 29px 0 29px 0;
+    }
+
+    .contact {
+      justify-content: flex-start !important;
+    }
+
+    .newsletter {
+      .footer {
+        &__title {
+          text-align: center;
+          font-size: em(20px);
+          line-height: em(27px, 20px);
+          margin-bottom: em(15px, 20px);
+        }
+      }
+
+      .form-group {
+        margin: 0 auto 34px 0;
+      }
+    }
+  }
 }

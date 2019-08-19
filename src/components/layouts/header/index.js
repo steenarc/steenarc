@@ -8,7 +8,8 @@ import "./style.scss";
 
 class Header extends PureComponent {
   state = {
-    isOpenMenu: false
+    isOpenMenu: false,
+    active: "home"
   };
 
   handleToggleMenu = () => {
@@ -17,8 +18,15 @@ class Header extends PureComponent {
     }));
   };
 
+  handleClickMenu = slug => {
+    this.setState(() => ({
+      isOpenMenu: false,
+      active: slug
+    }));
+  };
+
   render() {
-    const { isOpenMenu } = this.state;
+    const { isOpenMenu, active } = this.state;
     const { siteTitle } = this.props;
     return (
       <header
@@ -27,36 +35,69 @@ class Header extends PureComponent {
       >
         <div className="container">
           <nav className="header__nav">
-            <Link className="header__logo" to="/">
+            <Link className="header__logo" to="#home">
               <Logo />
             </Link>
 
-            <ul className="header__menu menu">
-              <li className="menu__item active">
-                <a className="menu__link" href="#" title="Home">
-                  Home
-                </a>
-              </li>
-              <li className="menu__item">
-                <Link to="/#howweworks" className="menu__link">
-                  How it works
-                </Link>
-              </li>
-              <li className="menu__item">
-                <Link to="/#pricing" className="menu__link">
-                  Pricing
-                </Link>
-              </li>
-              <li className="menu__item">
-                <Link to="/#faqs" className="menu__link">
-                  FAQs
-                </Link>
-              </li>
-            </ul>
+            <div className={`header__menu ${isOpenMenu && "is-opened"}`}>
+              <ul className="menu">
+                <li className={`menu__item ${active === "home" && "active"}`}>
+                  <Link
+                    to="#home"
+                    className="menu__link"
+                    onClick={() => this.handleClickMenu("home")}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li
+                  className={`menu__item ${active === "howweworks" &&
+                    "active"}`}
+                >
+                  <Link
+                    to="/#howweworks"
+                    className="menu__link"
+                    onClick={() => this.handleClickMenu("howweworks")}
+                  >
+                    How it works
+                  </Link>
+                </li>
+                <li
+                  className={`menu__item ${active === "pricing" && "active"}`}
+                >
+                  <Link
+                    to="#pricing"
+                    className="menu__link"
+                    onClick={() => this.handleClickMenu("pricing")}
+                  >
+                    Pricing
+                  </Link>
+                </li>
+                <li className={`menu__item ${active === "faqs" && "active"}`}>
+                  <Link
+                    to="/#faqs"
+                    className="menu__link"
+                    onClick={() => this.handleClickMenu("faqs")}
+                  >
+                    FAQs
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
             <a className="header__contact" href="#" title="Contact us">
               Contact us
             </a>
+
+            <div
+              class={`hamburger hamburger--slider d-block d-lg-none ${isOpenMenu &&
+                "is-active"}`}
+              onClick={this.handleToggleMenu}
+            >
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
           </nav>
         </div>
       </header>
