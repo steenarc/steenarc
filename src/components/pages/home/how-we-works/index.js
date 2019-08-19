@@ -48,7 +48,7 @@ export default class HowWeWorks extends Component {
                     Information
                   </p>
                   <div className="item__desc">
-                    You send us information base follow this templates.
+                    You send us information follow this template
                   </div>
                 </div>
               </div>
